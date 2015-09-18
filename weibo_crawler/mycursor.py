@@ -4,6 +4,7 @@ from threading import Lock
 from scrapy.item import DictItem
 
 
+
 class BatchInsertCollector():
     def __init__(self, cur, table_name, header=None, threshold=1000000):
         if not isinstance(cur, MyCursor):
