@@ -43,7 +43,7 @@ class WeiboSpider(scrapy.Spider):
         except Exception, e:
             log.msg("Error for parse_hot: " + response.url, level=log.ERROR)
             log.msg(str(e), level=log.ERROR)
-
+###
     def parse_user(self,response):
         log.msg("parse_user: " + response.url, level=log.INFO)
         try:
